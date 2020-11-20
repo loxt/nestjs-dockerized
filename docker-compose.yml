@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://loxt:docker@postgres:5432/api
+      NODE_ENV: development
+      PORT: 8080
+    ports:
+      - '8080:8080'
+  postgres:
+    image: postgres:13.1-alpine
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: loxt
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: api

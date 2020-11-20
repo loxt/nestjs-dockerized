@@ -1,5 +1,6 @@
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+  <a href="http://github.com/loxt/nestjs-dockerized" target="blank"><img src="https://camo.githubusercontent.com/5392506fabfe9051a3482767e324e8ed46e78297e0a6bb9a4312e4fbeeda5f70/68747470733a2f2f692e70696e696d672e636f6d2f353634782f66332f30372f39392f66333037393935323466623264323265393661333037396661376432353733392e6a7067" width="320" alt="Loxt" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
@@ -24,38 +25,12 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository modified by Loxt to work with Docker.
 
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
+## Build your image
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+$ docker-compose up -d
 ```
 
 ## Support
@@ -65,6 +40,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## Stay in touch
 
 - Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Creator of this repository - [Emannuel Matos](https://github.com/loxt)
+
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
